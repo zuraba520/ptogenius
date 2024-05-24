@@ -21,7 +21,6 @@ class HomePage extends StatelessWidget {
           const TabsWidget(),
           const SizedBox(height: 45.0),
           const UserInfo(),
-          const SizedBox(height: 15.0),
           ProjectListWidget(
             projects: Project.projectsData,
           ),

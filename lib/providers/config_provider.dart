@@ -13,7 +13,7 @@ class ConfigProvider with ChangeNotifier {
 
   final Map<BusinessType, List<int>> _fullBusinessProjectList = {
     BusinessType.Small: [
-      1,
+      4,
     ],
     BusinessType.Medium: [
       1,
