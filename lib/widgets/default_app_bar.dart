@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ptogenius/widgets/nodes/project.dart';
+import 'package:ptogenius/theme/app_theme.dart';
 
 class DefaultAppBar extends StatelessWidget implements PreferredSizeWidget {
   const DefaultAppBar({
@@ -12,19 +12,15 @@ class DefaultAppBar extends StatelessWidget implements PreferredSizeWidget {
       title: RichText(
         text: TextSpan(
             text: 'PTO',
-            style: TextStyle(
-              fontSize: 28.0,
-              fontWeight: FontWeight.bold,
-            ),
+            style: AppTheme.twentyEightBold.copyWith(color: AppTheme.black),
             children: [
               TextSpan(
-                  text: 'Genius',
-                  style: TextStyle(
-                    fontSize: 24.0,
-                  ))
+                text: 'Genius',
+                style: AppTheme.twentyEight.copyWith(color: AppTheme.black),
+              )
             ]),
       ),
-      actions: <Widget>[
+      actions: [
         IconButton(
           icon: const Icon(Icons.dehaze_rounded),
           onPressed: () {
